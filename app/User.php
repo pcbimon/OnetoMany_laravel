@@ -28,6 +28,7 @@ class User extends Authenticatable
     ];
 
     public function posts()
+    //ผู้ใช้หนึ่งคนสามารถโพสได้หลายโพส
     {
       return $this->hasMany('App\Post');
     }
